@@ -85,12 +85,8 @@ const Page = (props) => {
           break;
         case "uiComponentRef":
           switch (c.name) {
-            case "topWave":
-              el = <TopWave />;
-              break;
-            case "bottomWave":
-              el = <BottomWave />;
-              break;
+        
+          
             default:
               break;
           }
@@ -102,8 +98,8 @@ const Page = (props) => {
     });
 
   const gradient = {
-    from: (site.primaryColor && site.primaryColor.hex) || "#d53369",
-    to: (site.secondaryColor && site.secondaryColor.hex) || "#daae51",
+    // from: (site.primaryColor && site.primaryColor.hex) || "#d53369",
+    // to: (site.secondaryColor && site.secondaryColor.hex) || "#daae51",
   };
 
   const menuItems = page.navMenu && (page.navMenu.items || []);
