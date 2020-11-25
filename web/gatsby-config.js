@@ -10,6 +10,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
   plugins: [
+    "gatsby-plugin-styled-components",
     "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     {
@@ -29,6 +30,7 @@ module.exports = {
         watchMode: !isProd,
         overlayDrafts: !isProd
       }
-    }
+    },
+
   ]
 };

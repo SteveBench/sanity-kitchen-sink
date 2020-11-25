@@ -1,5 +1,15 @@
 import React from "react";
 import { Link, navigate } from "gatsby";
+import styled from "styled-components";
+
+const Anchor = styled.a` 
+ color: white;`
+
+ const Linkanchor = styled.a` 
+ color: white;`
+
+ 
+
 
 const doNavigate = target => {
   if (!target || !target.length) {
@@ -38,16 +48,16 @@ const CTALink = props => {
   // External
   if (props.link) {
     return (
-      <a href={props.link} target="_blank" rel="noopener noreferrer">
+      <Anchor href={props.link} target="_blank" rel="noopener noreferrer">
         {props.title}
-      </a>
+      </Anchor>
     );
   }
 
   return (
-    <Link className="mr-3" to={link}>
+    <Anchor className="mr-3" to={link}>
       {props.title}
-    </Link>
+    </Anchor>
   );
 };
 

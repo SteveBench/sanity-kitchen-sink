@@ -37,6 +37,10 @@
   }
 }
 
+.background-blck {
+  background-color: black;;
+}
+
 .toggleNavButton {
   appearance: none;
   font-size: 25px;
